@@ -97,7 +97,7 @@ public class SupTextView extends RelativeLayout {
     private LayoutParams centerBaseLineParams, topLineParams, bottomLineParams, leftImgParams, leftTextParams, centerTextParams, leftTopTextParams, leftBottomParams,
             leftBottomParams2, rightTextParams, rightImgParams, rightCheckBoxParams;
 
-    private OnSuperTextViewClickListener onSuperTextViewClickListener;
+    private OnSupTextViewClickListener onSupTextViewClickListener;
 
 
     public SupTextView(Context context) {
@@ -265,8 +265,8 @@ public class SupTextView extends RelativeLayout {
         this.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onSuperTextViewClickListener != null) {
-                    onSuperTextViewClickListener.onSuperTextViewClick();
+                if (onSupTextViewClickListener != null) {
+                    onSupTextViewClickListener.onSupTextViewClick();
                 }
             }
         });
@@ -338,8 +338,8 @@ public class SupTextView extends RelativeLayout {
         leftTopTV.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onSuperTextViewClickListener != null) {
-                    onSuperTextViewClickListener.onLeftTopClick();
+                if (onSupTextViewClickListener != null) {
+                    onSupTextViewClickListener.onLeftTopClick();
                 }
             }
         });
@@ -363,8 +363,8 @@ public class SupTextView extends RelativeLayout {
         leftBottomTV.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onSuperTextViewClickListener != null) {
-                    onSuperTextViewClickListener.onLeftBottomClick();
+                if (onSupTextViewClickListener != null) {
+                    onSupTextViewClickListener.onLeftBottomClick();
                 }
             }
         });
@@ -387,8 +387,8 @@ public class SupTextView extends RelativeLayout {
         leftBottomTV2.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (onSuperTextViewClickListener != null) {
-                    onSuperTextViewClickListener.onLeftBottomClick2();
+                if (onSupTextViewClickListener != null) {
+                    onSupTextViewClickListener.onLeftBottomClick2();
                 }
             }
         });
@@ -746,16 +746,16 @@ public class SupTextView extends RelativeLayout {
      * @param listener listener对象
      * @return 返回对象
      */
-    public SupTextView setOnSuperTextViewClickListener(OnSuperTextViewClickListener listener) {
-        onSuperTextViewClickListener = listener;
+    public SupTextView setOnSupTextViewClickListener(OnSupTextViewClickListener listener) {
+        onSupTextViewClickListener = listener;
         return this;
     }
 
     /**
      * 点击事件接口
      */
-    public static class OnSuperTextViewClickListener {
-        public void onSuperTextViewClick() {
+    public static class OnSupTextViewClickListener {
+        public void onSupTextViewClick() {
         }
 
         public void onLeftTopClick() {
