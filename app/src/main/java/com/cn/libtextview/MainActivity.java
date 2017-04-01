@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
             public void onSupTextViewClick() {
                 super.onSupTextViewClick();
                 //do something
-                Toast.makeText(MainActivity.this,"onSupTextViewClick",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "onSupTextViewClick", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
             public void onLeftBottomClick2() {
                 super.onLeftBottomClick2();
                 //do something
-                Toast.makeText(MainActivity.this,"LeftBottomClick2",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "LeftBottomClick2", Toast.LENGTH_LONG).show();
             }
         });
     }
